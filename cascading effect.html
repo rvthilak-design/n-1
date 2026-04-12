@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Background Effects</title>
+    <link rel="stylesheet" href="cascadingg.css">
+</head>
+
+<body>
+    <!-- Add a class to the element you want to style -->
+    <center>
+        <h1 class="Cascading Effects">Your Gradient Text Here</h1>
+
+
+        <div class="box color-bg">
+            <h2>Solid Background Color</h2>
+        </div>
+        <div class="box gradient-bg">
+            <h2>Linear Gradient Effect</h2>
+        </div>
+        <style>
+
+        </style>
+        <div class="box image-bg">
+            <h2>Background Image with Cover</h2>
+        </div>
+
+
+        <style>
+            /* Center the box on the screen (optional) */
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f0f2f5;
+                /* Light page background */
+            }
+
+            /* 1. THE COLORED BOX */
+            .styled-box {
+                background-color: #1a1a1a;
+                /* Dark box color */
+            }
+
+            /* 2. THE ANIMATED TEXT */
+            .animated-text {
+                font-family: 'Arial, sans-serif;
+ font-size: 60px;
+
+                /* Gradient setup */
+                background: linear-gradient(to right, #ff00cc, #3333ff, #00d4ff, #ff00cc);
+                background-size: 200% auto;
+
+                /* Clip to text */
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                /* Animation trigger */
+                animation: flow 3s linear infinite;
+            }
+
+            /* 3. THE MOVEMENT LOGIC */
+            @keyframes flow {
+                0% {
+                    background-position: 0% center;
+                }
+
+                100% {
+                    background-position: 200% center;
+                }
+            }
+        </style>
+</body>
+<!-- Everything is contained in this box -->
+<div class="styled-box">
+    <h1 class="animated-text">Glow</h1>
+</div>
+
+</html>

@@ -1,0 +1,59 @@
+/* Target your text element */
+.Cascading {
+    font-size: 48px;
+    font-weight: bold;
+
+
+    /* 1. Define the gradient */
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #ffdd00);
+
+
+    /* 2. Clip background to the text */
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+    /* 3. Make text transparent to show the gradient */
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    /* Fallback for older browsers */
+}
+
+
+/* General styling for the containers */
+.box {
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    color: white;
+    font-family: Arial, ;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* 1. Solid Background Color */
+.color-bg {
+    background-color: #3498db;
+    /* A nice blue color */
+}
+
+
+/* 2. Linear Gradient Effect */
+.gradient-bg {
+    background: linear-gradient(to left, #ff7e5f, #feb47b);
+}
+
+
+/* 3. Background Image Effect */
+.image-bg {
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20251117/pngtree-anime-waterfall-forest-serenity-scene-image_20309183.webp');
+
+    /* Replace with your image link */
+    background-size: cover;
+    /* Ensures image fills the container */
+    background-position: center;
+    background-repeat: no-repeat;
+}
